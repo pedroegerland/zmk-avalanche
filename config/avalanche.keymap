@@ -25,7 +25,9 @@
             &kp LEFT_CONTROL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp SPACE  &kp ENTER                            &kp BACKSPACE  &kp PG_UP          &kp PAGE_DOWN  &kp HOME  &kp END
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>,
+                <&inc_dec_kp C_BRIGHTNESS_DEC C_BRIGHTNESS_INC>;
         };
 
         CONFIG {
